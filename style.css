@@ -770,4 +770,11 @@ footer i{
     .services p{
         width: 100%;
     }
+    .about_video video{
+        width: 50%;
+        margin-left: 170px
+    }
+    .grey_Box{
+        width: 50%;
+    }
 }
