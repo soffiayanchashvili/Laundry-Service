@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laundry Service</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
-    <section class="first_section">
+    <section class="gray_section">
         <div class="container">
             <div class="before_header">
                 <div class="info">
@@ -23,22 +24,497 @@
                 </div>
             </div>
             <header>
-                <img src="image.png" alt="logo">
-                <p>Lauria</p>
-                <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-hands-bubbles"></i>
+                    <p>Lauria</p>
+                </div>
+                <nav class="navbar">
                     <ul>
-                        <a href=""><li>Home</li></a>
-                        <a href=""><li>About Us</li></a>
-                        <a href=""><li>Services</li></a>
-                        <a href=""><li>Pricing</li></a>
-                        <a href=""><li>Contact Us</li></a>
-
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About Us</li></a>
+                        <a href="#"><li>Services</li></a>
+                        <a href="#"><li>Pricing</li></a>
+                        <a href="#"><li>Contact Us</li></a>
                     </ul>
                 </nav>
+                <div id="burger" class="mobile_burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide mobile_navigation" id="mobile">
+                    <nav class="mobile_nav">
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Services</li></a>
+                            <a href="#"><li>Pricing</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_button">
+                    <button class="gray_button">Get a Quote</button>
+                </div>
             </header>
+            <div class="title">
+                <h1>More Clean More Fragrant With Our Laundry</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
         </div>
     </div>
     </section>
-    <script src="https://kit.fontawesome.com/eafe1a92af.js" crossorigin="anonymous"></script>
+    <section class="white_section">
+        <div class="container">
+            <div class="info_input">
+                <div class="info_text">
+                    <div class="left-text">
+                        <i class="fa-solid fa-hands-bubbles"></i>
+                        <h4 class="info_input_h4">Fullhand Clean</h4>
+                        <p class="gray_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="right_text">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                        <h4 class="info_input_h4">Sanitizer Sterils</h4>
+                        <p class="gray_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="registration">
+                    <form>
+                        <div>
+                            <div class="inputs">
+                                <input type="text" name="FirstName" placeholder="Your Name"/>
+                                <input type="text" name="Address" placeholder="Your Name"/>
+                            </div>
+                            <div class="inputs">
+                                <input type="number" name="Telephone" placeholder="Telephone">
+                                <select id="services">
+                                    <option id="services">Choose Services</option>
+                                    <option id="service 1">Service 1</option>
+                                    <option id="service 2">Service 2</option>
+                                    <option id="service 3">Service 3</option>
+                                </select>
+                            </div>
+                            <button class="white_button">Get Reservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="about_us">
+                <div class="left">
+                    <div class="about_video">
+                        <div class="grey_Box"></div>
+                        <video src="aametqi.mp4" controls muted></video>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="lighter">ABOUT US</p>
+                    <h3>We Are Best Choicing Laundry Services For You</h3>
+                    <p class="gray_p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua
+                    </p>
+                    <div class="right_div">
+                        <p class="gray_p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <div class="icon_list">
+                        <div class="icon_list_sides">
+                            <div class="left_side_i"><i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p></div>
+                            <div class="left_side_i"><i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p></div>
+                            <div class="left_side_i"><i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p></div>
+                        </div>
+                        <div class="icon_list_sides">
+                            <div class="left_side_i"><i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p></div>
+                            <div class="left_side_i"><i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p></div>
+                            <div class="left_side_i"><i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gray_section">
+        <div class="container">
+            <div class="about_buisness">
+                <div class="top_achivement">
+                    <p class="lighter">Our Stats</p>
+                    <h4>Our Business Number</h4>
+                    <p class="lighter_p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua
+                    </p>
+                </div>
+                <div class="bottom_achivements">
+                    <div class="numbers">
+                        <p class="number">30 +</p>
+                        <h4>Our Branch</h4>
+                        <p class="lighter_p">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="number">150 + </p>
+                        <h4>Team Member</h4>
+                        <p class="lighter_p">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="white_saction">
+        <div class="container">
+            <div class="services">
+                <p class="lighter">OUR SERVICES</p>
+                <h3>We Do Laundry Services</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="text_boxes">
+                <div class="icon_box">
+                    <i class="fa-solid fa-hands-bubbles"></i>
+                    <h5 class="black_title">Dry Clean</h5>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="icon_box">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h5 class="black_title">One Day Fast</h5>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="icon_box">
+                    <i class="fa-solid fa-hand-sparkles"></i>
+                    <h5 class="black_title">All In Laundry</h5>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23832.96356147338!2d44.768419415625004!3d41.6963355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440ce5fa73b813%3A0x3210a812b42efa17!2sThe%20Museum%20of%20books!5e0!3m2!1sen!2sge!4v1676909966563!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="progress_bar">
+                <div class="left_side">
+                    <p class="lighter">Why CHoice Us</p>
+                    <h3>We Can Be Best Solution For Your Laundry Service</h3>
+                    <p class="gray_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <div class="left_side_div">
+                        <div class="left_side_i">
+                           <i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p>
+                        </div>
+                           <div class="left_side_i">
+                           <i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p>
+                        </div>
+                        <div class="left_side_i">
+                           <i class="fa-solid fa-circle-check"></i><p class="gray_p">best worker service</p>
+                        </div>
+                        <div class="video_button">
+                            <button class="gray_button">contact us</button>
+                            <a href="https://www.youtube.com/watch?v=hkvdVOTQjGk"><i class="fa-solid fa-circle-play"></i></a>
+                            <a href="https://www.youtube.com/watch?v=hkvdVOTQjGk" class="gray_p">Play Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <div class="right_side_box">
+                        <i class="fa-solid fa-star"></i>
+                        <div class="box_p">
+                            <h5>The Best Laundry</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="right_side_box">
+                        <i class="fa-solid fa-umbrella"></i>
+                        <div class="box_p">
+                            <h5>Rain Free</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="right_side_box">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="box_p">
+                            <h5>One Day Services</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing">
+                <div class="services">
+                    <p class="lighter">Title Section</p>
+                    <h3>Best Price For Best Services</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="services_boxes">
+                    <div class="pricing_box">
+                        <h5 class="black_title">Dry Clean</h5>
+                        <p class="price_for">Price For / 5 Kg</p>
+                        <p class="number"> $15 </p>
+                        <div class="features">
+                            <div class="darker_font">
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Clean Services</p>
+                                </div>                                
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Fragnant Bonusess</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Free Packaging</p>
+                                </div>
+                            </div>
+                            <div class="lighter_font">
+                                <div>
+                                    <i class="fa-sharp fa-solid fa-circle-xmark"></i><p>Extra Delivery</p>
+                                </div>
+                                <div>
+                                    <i class="fa-sharp fa-solid fa-circle-xmark"></i><p>Iron Clothes</p>
+                                </div>
+                                <div>
+                                    <i class="fa-sharp fa-solid fa-circle-xmark"></i><p>Priority Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gray_button">Lets Talk Us</button>
+                    </div>
+                    <div class="pricing_box">
+                        
+                        <h5 class="black_title">One Day Fast</h5>
+                        <p class="price_for">Price For / 5 Kg</p>
+                        <p class="number"> $35 </p>
+                        <div class="features">
+                            <div class="darker_font">
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Clean Services</p>
+                                </div>                                
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Fragnant Bonusess</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Free Packaging</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Extra Delivery</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Iron Clothes</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Priority Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gray_button">Lets Talk Us</button>
+                    </div>
+                    <div class="pricing_box">
+                        <h5 class="black_title">All In Laundry</h5>
+                        <p class="price_for">Price For / 5 Kg</p>
+                        <p class="number"> $19 </p>
+                        <div class="features">
+                            <div class="darker_font">
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Clean Services</p>
+                                </div>                                
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Fragnant Bonusess</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Free Packaging</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i><p>Iron Clothes</p>
+                                </div>
+                            </div>
+                            <div class="lighter_font">
+                                <div>
+                                    <i class="fa-sharp fa-solid fa-circle-xmark"></i><p>Extra Delivery</p>
+                                </div>
+                                <div>
+                                    <i class="fa-sharp fa-solid fa-circle-xmark"></i><p>Priority Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gray_button">Lets Talk Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gray_section">
+        <div class="container">
+            <div class="progress_bar">
+                <div class="about_video">
+                    <video src="aametqi.mp4" controls muted></video>
+                </div>
+                <div class="right_column">
+                    <p class="lighter">Our Team Skill</p>
+                    <h4>We Have Great Team Skill With Certification</h4>
+                    <p class="lighter_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <div class="procent_boxes">
+                        <div class="skill_bar">
+                            <div class="space_p">
+                                <p>Hand Cleaning</p>
+                                <p>92%</p>
+                            </div>
+                            <div class="procents"></div>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="space_p">
+                                <p>Fast Services</p>
+                                <p>98%</p>
+                            </div>
+                            <div class="procents"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="white_saction">
+        <div class="container">
+            <div class="testimonals">
+                <div class="title_section">
+                   <div class="services">
+                      <p class="lighter">Testimonial</p>
+                      <h3>Best Feedback From Clients</h3>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                   </div>
+                </div>
+                <div class="TestimonialSlider">
+                    <div class="testimonial">
+                        <div class="testimonial_i">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="gray_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="client">
+                            <div class="Placeholder"></div>
+                            <div class="client_info">
+                                <p class="client_name">Mr. John Doe</p>
+                                <p class="lighter">Reviews On Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial" id="dissepare">
+                        <div class="testimonial_i">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="gray_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="client">
+                            <div class="Placeholder"></div>
+                            <div class="client_info">
+                                <p class="client_name">Mr. John Doe</p>
+                                <p class="lighter">Reviews On Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="white_saction">
+        <div class="container">
+            <div class="contact_us">
+                <div class="info_column">
+                    <p class="lighter">Stay Tuned</p>
+                    <h3>Keep Connected & Lets Get In Touch With Us</h3>
+                    <p class="gray_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <div class="contact_info">
+                        <a href="https://goo.gl/maps/XMxRHwKwK5yKf8K1A"><i class="fa-solid fa-location-dot"></i></a>
+                        <div class="box_content">
+                            <a href="https://goo.gl/maps/XMxRHwKwK5yKf8K1A"><h5>Head Office Address</h5></a>
+                            <a href="https://goo.gl/maps/XMxRHwKwK5yKf8K1A" class="gray_p">Lumbung Hidup Street Madiun City East Java</a>
+                        </div>
+                    </div>
+                    <div class="contact_info">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fa-solid fa-envelope"></i></a>
+                        <div class="box_content">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><h5>Email Address</h5></a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="gray_p">Hello@Lauria.com</a>
+                        </div>
+                    </div>
+                    <div class="contact_info">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <div class="box_content">
+                            <h5>Office Telephone</h5>
+                            <p class="gray_p">( +62 ) 123 456 789</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="input_column">
+                    <p class="lighter">Fill This Form</p>
+                    <h4>Leave a Message For Us & Get Text Back</h4>
+                    <p class="lighter_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <div>
+                        <div class="inputs">
+                            <input type="text" name="FirstName" placeholder="First Name"/>
+                            <input type="text" name="LastName" placeholder="Last Name"/>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" name="email" placeholder="Email Address">
+                            <input type="text" name="title" placeholder="Subject">
+                        </div>
+                        <textarea name="Message" id="Message" placeholder="Your Message Here..."></textarea>
+                        <button class="white_button">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lighter_grey_section"></div>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="logo_info">
+                        <div class="logo">
+                            <i class="fa-solid fa-hands-bubbles"></i>
+                            <p>Lauria</p>
+                        </div>
+                        <p class="lighter_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <div class="icons ">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                    </div> 
+                    <nav class="footer_nav">
+                        <h5>Navigation</h5>
+                        <ul>
+                            <a href="#"><li>Homepage</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Our Services</li></a>
+                            <a href="#"><li>Our Pricing</li></a>
+                            <a href="#"><li>Join Us</li></a>
+                        </ul>
+                    </nav>
+                    <div class="newsLater">
+                        <h5>Our Newslater</h5>
+                        <p class="lighter_p">Subscribe Our Newslater to get New Update & Big Discount Sale.</p>
+                        <div class="Subscribe_form">
+                            <form>
+                                <input type="email" name="email" placeholder="Email Address">
+                                <button class="white_button">Subscribe Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://kit.fontawesome.com/eafe1a92af.js" crossorigin="anonymous">
+    </script>
+    <script>
+        const burger = document.getElementById ('burger')
+        const mobile = document.getElementById ('mobile')
+        burger.addEventListener ('click', () => {
+            mobile.classList.toggle('show')
+            mobile.classList.toggle('hide')
+        })
+    </script>
 </body>
 </html>
